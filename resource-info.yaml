@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: my-database
+  description: PostgreSQL database for MyComponent
+  tags:
+    - database
+    - postgresql
+spec:
+  type: database
+  owner: my-team
+  system: my-system
+  dependsOn:
+    - resource:my-storage

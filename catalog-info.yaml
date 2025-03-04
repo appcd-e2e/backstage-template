@@ -11,3 +11,5 @@ spec:
   type: service
   owner: my-team
   lifecycle: experimental
+  dependsOn:
+    - resource:my-database
